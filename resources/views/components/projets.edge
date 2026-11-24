@@ -1,0 +1,748 @@
+<section id="projets" data-filter-group class="py-16 md:scroll-mt-24">
+  <div data-reveal class="relative mx-auto w-[92%] max-w-[1100px] ">
+    <h2 class="font-title mb-8 text-left text-3xl md:text-4xl">Projets</h2>
+
+    <div class="mb-8 flex flex-wrap justify-start gap-2.5">
+      <button
+        type="button"
+        data-filter="all"
+        data-active="true"
+        class="cursor-pointer rounded-lg border border-black/10 bg-white/50 px-4 py-2.5 text-base font-medium backdrop-blur-md transition hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-white/5 dark:hover:bg-paper dark:hover:text-ink data-[active=true]:border-ink data-[active=true]:bg-ink data-[active=true]:text-paper dark:data-[active=true]:border-paper dark:data-[active=true]:bg-paper dark:data-[active=true]:text-ink"
+      >
+        Tous
+      </button>
+      <button
+        type="button"
+        data-filter="web"
+        class="cursor-pointer rounded-lg border border-black/10 bg-white/50 px-4 py-2.5 text-base font-medium backdrop-blur-md transition hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-white/5 dark:hover:bg-paper dark:hover:text-ink data-[active=true]:border-ink data-[active=true]:bg-ink data-[active=true]:text-paper dark:data-[active=true]:border-paper dark:data-[active=true]:bg-paper dark:data-[active=true]:text-ink"
+      >
+        Web
+      </button>
+      <button
+        type="button"
+        data-filter="design"
+        class="cursor-pointer rounded-lg border border-black/10 bg-white/50 px-4 py-2.5 text-base font-medium backdrop-blur-md transition hover:bg-ink hover:text-paper dark:border-white/10 dark:bg-white/5 dark:hover:bg-paper dark:hover:text-ink data-[active=true]:border-ink data-[active=true]:bg-ink data-[active=true]:text-paper dark:data-[active=true]:border-paper dark:data-[active=true]:bg-paper dark:data-[active=true]:text-ink"
+      >
+        Design
+      </button>
+    </div>
+
+    <div data-stagger class="grid grid-cols-[repeat(auto-fill,minmax(290px,1fr))] gap-6">
+      <article
+        data-category="web"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/images/projets/clone-whatsapp-v2.jpg"
+          alt="Aperçu du projet Application web Clone WhatsApp V2"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+               GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le projet
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Application web Clone WhatsApp V2</h3>
+          <p class="text-sm opacity-80">
+            Deuxième version de mon clone WhatsApp, avec un back-end AdonisJS et une base PostgreSQL.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               AdonisJS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TypeScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               JavaScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TailwindCSS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               CSS3
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               PostgreSQL
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="web"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/images/projets/clone-whatsapp.jpg"
+          alt="Aperçu du projet Clone WhatsApp application web"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+               GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le projet
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Clone WhatsApp application web</h3>
+          <p class="text-sm opacity-80">
+            Interface web de WhatsApp, responsive, en HTML, TailwindCSS et JavaScript.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               HTML5
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TailwindCSS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               JavaScript
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="web"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/cover-portfolio.png"
+          alt="Aperçu du projet Portfolio personnel Christ Mindele"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+               GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le projet
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Portfolio personnel Christ Mindele</h3>
+          <p class="text-sm opacity-80">
+            Mon portfolio : présentation, compétences, projets et formulaire de contact relié à une base de données.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               AdonisJS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TypeScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               JavaScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TailwindCSS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               PostgreSQL
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="web"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/images/projets/raccourcisseur-url.jpg"
+          alt="Aperçu du projet Mini raccourcisseur URL"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+               GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le projet
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Mini raccourcisseur URL</h3>
+          <p class="text-sm opacity-80">
+            Application qui raccourcit les liens, développée avec AdonisJS et TypeScript.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               AdonisJS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TypeScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               JavaScript
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TailwindCSS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               CSS3
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="web"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/images/projets/portfolio-henock.jpg"
+          alt="Aperçu du projet Portfolio Henock Mindele"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+               GitHub
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le projet
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Portfolio Henock Mindele</h3>
+          <p class="text-sm opacity-80">Site portfolio responsive réalisé pour Henock Mindele.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               HTML5
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               TailwindCSS
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               JavaScript
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="design"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/netflix.png"
+          alt="Aperçu du projet Maquette Landing page Netflix"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between justify-end">
+            <a
+              href="https://www.figma.com/design/gn4taUoEuKJNRgS8Cwr2QC/landing-page-netflix?node-id=0-1&p=f&t=OB5LS0hvAgBOxKPX-0"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le rendu
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Maquette Landing page Netflix</h3>
+          <p class="text-sm opacity-80">
+            Maquette d'une landing page inspirée de Netflix, réalisée sur Figma.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               Figma
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="design"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/croquis-logo.jpg"
+          alt="Aperçu du projet Création d'identité visuelle de la boutique DK Collection"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between justify-end">
+            <a
+              href="brand-logo DK Collection.pdf"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le rendu
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">
+            Création d'identité visuelle de la boutique DK Collection
+          </h3>
+          <p class="text-sm opacity-80">Logo et identité visuelle de la boutique DK Collection.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="/icons/photoshop.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               Photoshop
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="/icons/illustrator.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               Illustrator
+            </span>
+          </div>
+        </div>
+      </article>
+      <article
+        data-category="design"
+        class="group/card overflow-hidden rounded-2xl transition duration-300 md:hover:scale-[1.03] md:hover:shadow-xl md:hover:shadow-black/10 md:dark:hover:shadow-black/50 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+      >
+        <img
+          src="/cover.jpg"
+          alt="Aperçu du projet Portfolio design 2026"
+          class="aspect-[16/10] w-full bg-gradient-to-br from-accent to-ink object-cover transition duration-500 md:group-hover/card:scale-105"
+        />
+        <div class="p-5">
+          <div class="mb-3 flex justify-between justify-end">
+            <a
+              href="Portfolio-Mindele2026.pdf"
+              target="_blank"
+              rel="noopener"
+              class="group/btn inline-flex items-center gap-1.5 rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Voir le rendu
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="size-4.5 shrink-0 transition group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5"
+              >
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold">Portfolio design 2026</h3>
+          <p class="text-sm opacity-80">Présentation de mes travaux de design graphique en 2026.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="/icons/photoshop.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               Photoshop
+            </span>
+            <span
+              class="group inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-lg border border-black/10 bg-white/50 md:hover:border-ink md:dark:hover:border-paper dark:border-white/10 dark:bg-white/5 font-medium transition"
+            >
+              <img
+                src="/icons/illustrator.svg"
+                alt=""
+                loading="lazy"
+                class="size-4 shrink-0 grayscale opacity-80 transition dark:invert md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:invert-0"
+              />
+               Illustrator
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

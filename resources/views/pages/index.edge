@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Christ Mindele | Développeur web fullstack & graphiste designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Applique le thème avant l'affichage pour éviter le flash blanc
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+  </head>
+  <body class="bg-paper pb-24 font-sans text-ink md:pb-0 dark:bg-night dark:text-paper">
+    @include('components/nav')
+    <main>
+      @include('components/hero')
+      @include('components/apropos')
+      @include('components/competences')
+      @include('components/projets')
+      @include('components/contact')
+    </main>
+    @include('components/footer')
+  </body>
+</html>

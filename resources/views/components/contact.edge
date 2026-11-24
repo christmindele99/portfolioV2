@@ -1,0 +1,349 @@
+<section
+  id="contact"
+  {{
+    flashMessages.has('success') || flashMessages.has('inputErrorsBag')
+      ? 'data-feedback'
+      : ''
+  }}
+  class="py-16 md:scroll-mt-24"
+>
+  <div data-reveal class="relative mx-auto w-[92%] max-w-[1100px] ">
+    @if(flashMessages.has('success'))
+      <div class="mb-6 rounded-xl border border-accent bg-accent/10 p-4 text-sm font-medium">
+        {{ flashMessages.get('success') }}
+      </div>
+    @end
+
+    <div data-stagger class="flex flex-col gap-10 md:flex-row md:items-stretch md:gap-8">
+      {{-- Colonne gauche : formulaire de contact --}}
+      <div class="flex flex-col md:w-1/2">
+        <h2 class="font-title mb-8 text-left text-3xl md:text-4xl">Me contacter</h2>
+
+        <div
+          class="flex flex-1 flex-col rounded-xl p-5 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+        >
+          <p class="mb-4 text-left text-sm opacity-80">
+            Un projet, une collaboration ou une demande de service ? Écris-moi, je réponds rapidement.
+          </p>
+
+          <form method="POST" action="/messages" class="flex flex-1 flex-col">
+            {{ csrfField() }}
+            <div class="mb-3 flex flex-col gap-1.5 ">
+              <label for="fullname" class="text-sm font-medium">Nom complet</label>
+              <input
+                id="fullname"
+                name="fullname"
+                type="text"
+                maxlength="250"
+                value="{{ old('fullname') || '' }}"
+                placeholder="Ex. Jean Kabongo"
+                required
+                class="rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+              />
+              @inputError('fullname')
+                <p class="text-xs font-medium">Écris ton nom complet (2 caractères minimum).</p>
+              @end
+            </div>
+            <div class="flex flex-col md:flex-row md:gap-3">
+              <div class="mb-3 flex flex-col gap-1.5 md:flex-1">
+                <label for="email" class="text-sm font-medium">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="250"
+                  value="{{ old('email') || '' }}"
+                  placeholder="vous@exemple.com"
+                  required
+                  class="rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+                />
+                @inputError('email')
+                  <p class="text-xs font-medium">Écris une adresse email valide.</p>
+                @end
+              </div>
+              <div class="mb-3 flex flex-col gap-1.5 md:flex-1">
+                <label for="number" class="text-sm font-medium">Téléphone</label>
+                <input
+                  id="number"
+                  name="number"
+                  type="tel"
+                  maxlength="150"
+                  value="{{ old('number') || '' }}"
+                  placeholder="+243 000 000 000"
+                  required
+                  class="rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+                />
+                @inputError('number')
+                  <p class="text-xs font-medium">Écris un numéro de téléphone valide.</p>
+                @end
+              </div>
+            </div>
+            <div class="mb-3 flex flex-col gap-1.5 flex-1">
+              <label for="contain" class="text-sm font-medium">Message</label>
+              <textarea
+                id="contain"
+                name="contain"
+                rows="4"
+                placeholder="Décris ton projet ou ta demande"
+                required
+                class="min-h-40 flex-1 resize-none rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+              >{{ old('contain') || '' }}</textarea>
+              @inputError('contain')
+                <p class="text-xs font-medium">Écris un message d'au moins 5 caractères.</p>
+              @end
+            </div>
+            <button
+              type="submit"
+              class="mt-2 w-full cursor-pointer inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 font-semibold transition hover:-translate-y-0.5 bg-accent border-accent text-ink"
+            >
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </div>
+      {{-- Colonne droite : formulaire d'avis --}}
+      <div class="flex flex-col md:w-1/2">
+        <h2 class="font-title mb-8 text-left text-3xl md:text-4xl">Ce qu'on dit de moi</h2>
+
+        <div
+          class="flex flex-1 flex-col rounded-xl p-5 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+        >
+          <p class="mb-4 text-left text-sm opacity-80">
+            Tu as travaillé avec moi ? Laisse ton avis, il sera publié sur le site.
+          </p>
+
+          <form method="POST" action="/comments" class="flex flex-1 flex-col">
+            {{ csrfField() }}
+            <div class="mb-3 flex flex-col gap-3 sm:flex-row sm:items-start">
+              <div class="flex flex-1 flex-col gap-1.5">
+                <label for="review-author" class="text-sm font-medium">Nom complet</label>
+                <input
+                  id="review-author"
+                  name="author"
+                  type="text"
+                  maxlength="250"
+                  value="{{ old('author') || '' }}"
+                  placeholder="Ex. Grace Kabeya"
+                  required
+                  class="rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+                />
+                @inputError('author')
+                  <p class="text-xs font-medium">Écris ton nom complet (2 caractères minimum).</p>
+                @end
+              </div>
+              <div data-rating class="flex flex-col gap-1.5">
+                <span class="text-sm font-medium">Note</span>
+                <div class="flex gap-0.5 py-1">
+                  <button
+                    type="button"
+                    data-star="1"
+                    aria-label="1 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    data-star="2"
+                    aria-label="2 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    data-star="3"
+                    aria-label="3 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    data-star="4"
+                    aria-label="4 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    data-star="5"
+                    aria-label="5 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    data-star="6"
+                    aria-label="6 sur 6"
+                    class="group/star cursor-pointer p-0.5"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-5 fill-none stroke-accent transition group-data-[on=true]/star:fill-accent"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <input type="hidden" name="rating" value="{{ old('rating') || 0 }}" />
+                @inputError('rating')
+                  <p class="text-xs font-medium">Choisis une note de 1 à 6.</p>
+                @end
+              </div>
+            </div>
+            <div class="mb-3 flex flex-col gap-1.5 ">
+              <label for="review-email" class="text-sm font-medium">Email</label>
+              <input
+                id="review-email"
+                name="authorEmail"
+                type="email"
+                maxlength="250"
+                value="{{ old('authorEmail') || '' }}"
+                placeholder="vous@gmail.com"
+                required
+                class="rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+              />
+              @inputError('authorEmail')
+                <p class="text-xs font-medium">Écris une adresse email valide.</p>
+              @end
+            </div>
+            <div class="mb-3 flex flex-col gap-1.5 flex-1">
+              <label for="review-comment" class="text-sm font-medium">Message</label>
+              <textarea
+                id="review-comment"
+                name="comment"
+                rows="4"
+                placeholder="Partage ton avis"
+                required
+                class="min-h-40 flex-1 resize-none rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-accent dark:border-white/15 dark:bg-night"
+              >{{ old('comment') || '' }}</textarea>
+              @inputError('comment')
+                <p class="text-xs font-medium">Écris ton avis (5 caractères minimum).</p>
+              @end
+            </div>
+            <button
+              type="submit"
+              class="mt-2 w-full cursor-pointer inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 font-semibold transition hover:-translate-y-0.5 bg-accent border-accent text-ink"
+            >
+              Publier mon avis
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{-- Avis publiés : viennent de la base de données (HomeController) --}}
+    <div data-stagger class="mt-6 flex flex-col gap-4 md:flex-row">
+      @if(reviews.length)
+        @each(review in reviews)
+          <article
+            class="min-w-0 rounded-xl p-4 md:flex-1 border border-black/10 bg-white/50 backdrop-blur-md dark:border-white/10 dark:bg-white/5"
+          >
+            <div class="flex items-center gap-3">
+              <span
+                class="grid size-10 shrink-0 place-items-center rounded-full bg-accent/20 text-xs font-semibold"
+              >
+                {{ review.initials }}
+              </span>
+              <div class="min-w-0 flex-1">
+                <p class="truncate text-sm font-semibold leading-tight">{{ review.fullname }}</p>
+                <p class="truncate text-xs opacity-70">{{ review.email }}</p>
+              </div>
+              <div class="flex shrink-0 gap-0.5" aria-label="Note : {{ review.rating }} sur 6">
+                @each(n in [1, 2, 3, 4, 5, 6])
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="size-3.5 shrink-0 stroke-accent {{ n <= review.rating ? 'fill-accent' : 'fill-none' }}"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    />
+                  </svg>
+                @end
+              </div>
+            </div>
+            <p class="mt-3 text-sm wrap-break-word opacity-90">{{ review.contain }}</p>
+          </article>
+        @end
+      @else
+        <p class="text-sm opacity-70">
+          Aucun avis pour le moment. Sois le premier à en laisser un !
+        </p>
+      @end
+    </div>
+  </div>
+</section>

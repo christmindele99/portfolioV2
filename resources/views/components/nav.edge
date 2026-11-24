@@ -1,0 +1,147 @@
+<nav
+  id="main-nav"
+  aria-label="Navigation principale"
+  class="fixed bottom-5 left-1/2 z-50 w-max -translate-x-1/2 whitespace-nowrap rounded-full border border-black/10 bg-black/10 shadow-lg shadow-black/5 backdrop-blur-xl md:top-5 md:bottom-auto dark:border-white/15 dark:bg-white/10"
+>
+  <ul class="flex items-center gap-1 px-2 py-2 md:gap-2 md:px-3">
+    <li>
+      <button
+        id="themeToggle"
+        type="button"
+        aria-label="Changer de thème"
+        class="flex size-11 cursor-pointer items-center justify-center rounded-full text-ink/80 transition-colors hover:bg-black/10 dark:text-paper/80 dark:hover:bg-white/10"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 dark:hidden"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+          />
+        </svg>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="hidden size-5 dark:block"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </li>
+    <li class="mx-1 h-6 w-px bg-ink/15 dark:bg-paper/20"></li>
+    <li>
+      <a
+        href="#accueil"
+        data-section="accueil"
+        data-active="true"
+        class="flex size-11 items-center justify-center gap-2 rounded-full text-ink/70 transition-colors hover:bg-black/10 data-[active=true]:bg-accent/25 data-[active=true]:text-ink md:size-auto md:justify-start md:px-4 md:py-2 dark:text-paper/70 dark:hover:bg-white/10 dark:data-[active=true]:text-paper"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 shrink-0 md:hidden"
+        >
+          <path d="M3 11.5 12 4l9 7.5M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9" />
+        </svg>
+        <span class="hidden font-medium md:inline md:text-base">Accueil</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#apropos"
+        data-section="apropos"
+        class="flex size-11 items-center justify-center gap-2 rounded-full text-ink/70 transition-colors hover:bg-black/10 data-[active=true]:bg-accent/25 data-[active=true]:text-ink md:size-auto md:justify-start md:px-4 md:py-2 dark:text-paper/70 dark:hover:bg-white/10 dark:data-[active=true]:text-paper"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 shrink-0 md:hidden"
+        >
+          <circle cx="12" cy="8" r="3.2" />
+          <path d="M5 20c1.2-3.5 4-5.2 7-5.2s5.8 1.7 7 5.2" />
+        </svg>
+        <span class="hidden font-medium md:inline md:text-base">À propos</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#competences"
+        data-section="competences"
+        class="flex size-11 items-center justify-center gap-2 rounded-full text-ink/70 transition-colors hover:bg-black/10 data-[active=true]:bg-accent/25 data-[active=true]:text-ink md:size-auto md:justify-start md:px-4 md:py-2 dark:text-paper/70 dark:hover:bg-white/10 dark:data-[active=true]:text-paper"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 shrink-0 md:hidden"
+        >
+          <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+        </svg>
+        <span class="hidden font-medium md:inline md:text-base">Compétences</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#projets"
+        data-section="projets"
+        class="flex size-11 items-center justify-center gap-2 rounded-full text-ink/70 transition-colors hover:bg-black/10 data-[active=true]:bg-accent/25 data-[active=true]:text-ink md:size-auto md:justify-start md:px-4 md:py-2 dark:text-paper/70 dark:hover:bg-white/10 dark:data-[active=true]:text-paper"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 shrink-0 md:hidden"
+        >
+          <rect x="3.5" y="6" width="17" height="13" rx="1.5" />
+          <path d="M8.5 6V5a1.5 1.5 0 0 1 1.5-1.5h4A1.5 1.5 0 0 1 15.5 5v1" />
+        </svg>
+        <span class="hidden font-medium md:inline md:text-base">Projets</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#contact"
+        data-section="contact"
+        class="flex size-11 items-center justify-center gap-2 rounded-full text-ink/70 transition-colors hover:bg-black/10 data-[active=true]:bg-accent/25 data-[active=true]:text-ink md:size-auto md:justify-start md:px-4 md:py-2 dark:text-paper/70 dark:hover:bg-white/10 dark:data-[active=true]:text-paper"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-5 shrink-0 md:hidden"
+        >
+          <rect x="3.5" y="5" width="17" height="14" rx="2" />
+          <path d="m4 6.5 8 6 8-6" />
+        </svg>
+        <span class="hidden font-medium md:inline md:text-base">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
