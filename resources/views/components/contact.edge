@@ -7,14 +7,14 @@
   }}
   class="py-16 md:scroll-mt-24"
 >
-  <div data-reveal class="relative mx-auto w-[92%] max-w-[1100px] ">
+  <div data-reveal class="relative mx-auto w-[92%] max-w-[1100px]">
     @if(flashMessages.has('success'))
       <div class="mb-6 rounded-xl border border-accent bg-accent/10 p-4 text-sm font-medium">
         {{ flashMessages.get('success') }}
       </div>
     @end
 
-    <div data-stagger class="flex flex-col gap-10 md:flex-row md:items-stretch md:gap-8 mb-8">
+    <div data-stagger class="flex flex-col gap-10 md:flex-row md:items-stretch md:gap-8">
       {{-- Colonne gauche : formulaire de contact --}}
       <div class="flex flex-col md:w-1/2">
         <h2 class="font-title mb-8 text-left text-3xl md:text-4xl">Me contacter</h2>
@@ -303,7 +303,7 @@
       </div>
     </div>
     {{-- Avis publiés : viennent de la base de données (HomeController) --}}
-    <div data-stagger class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div data-stagger class="grid grid-cols-1 gap-4 lg:grid-cols-3 mt-8">
       @if(reviews.length)
         @each(review in reviews)
           <article
