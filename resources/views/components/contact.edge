@@ -14,7 +14,7 @@
       </div>
     @end
 
-    <div data-stagger class="flex flex-col gap-10 md:flex-row md:items-stretch md:gap-8">
+    <div data-stagger class="flex flex-col gap-10 md:flex-row md:items-stretch md:gap-8 mb-8">
       {{-- Colonne gauche : formulaire de contact --}}
       <div class="flex flex-col md:w-1/2">
         <h2 class="font-title mb-8 text-left text-3xl md:text-4xl">Me contacter</h2>
@@ -133,7 +133,7 @@
               </div>
               <div data-rating class="flex flex-col gap-1.5">
                 <span class="text-sm font-medium">Note</span>
-                <div class="flex gap-0.5 py-1">
+                <div data-stars-row class="flex gap-0.5 py-1">
                   <button
                     type="button"
                     data-star="1"
@@ -259,6 +259,7 @@
                 @inputError('rating')
                   <p class="text-xs font-medium">Choisis une note de 1 à 6.</p>
                 @end
+                <p data-rating-error class="hidden text-xs font-medium">Choisis une note de 1 à 6 avant de publier.</p>
               </div>
             </div>
             <div class="mb-3 flex flex-col gap-1.5 ">
@@ -302,7 +303,7 @@
       </div>
     </div>
     {{-- Avis publiés : viennent de la base de données (HomeController) --}}
-    <div data-stagger class="mt-6 flex flex-col gap-4 md:flex-row">
+    <div data-stagger class="grid grid-cols-1 gap-4 lg:grid-cols-3">
       @if(reviews.length)
         @each(review in reviews)
           <article

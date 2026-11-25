@@ -102,6 +102,10 @@ function initRating() {
 
   const input = wrapper.querySelector('input[name="rating"]')
   const stars = wrapper.querySelectorAll('[data-star]')
+  const form = wrapper.closest('form')
+  const error = wrapper.querySelector('[data-rating-error]')
+  const row = wrapper.querySelector('[data-stars-row]')
+  const highlight = ['ring-2', 'ring-accent', 'rounded-lg']
 
   const paint = (value) => {
     stars.forEach((star) => {
@@ -113,11 +117,20 @@ function initRating() {
     star.addEventListener('click', () => {
       input.value = star.dataset.star
       paint(Number(input.value))
+      error.classList.add('hidden')
+      row.classList.remove(...highlight)
     })
     star.addEventListener('mouseenter', () => paint(Number(star.dataset.star)))
     star.addEventListener('mouseleave', () => paint(Number(input.value)))
   })
-
+    // Bloque l'envoi si aucune note n'est choisie
+  form.addEventListener('submit', (event) => {
+    if (Number(input.value) >= 1) return
+    event.preventDefault()
+    error.classList.remove('hidden')
+    row.classList.add(...highlight)
+    stars[0].focus()
+  })
   // Remet les étoiles choisies si le formulaire a été refusé
   paint(Number(input.value))
 }
