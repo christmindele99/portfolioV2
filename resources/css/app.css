@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Artega';
-  src: url('/fonts/Artega.woff2') format('woff2');
+  src: url('/fonts/Artega.ttf') format('truetype');
   font-display: swap;
 }
 
