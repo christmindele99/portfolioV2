@@ -3,7 +3,7 @@ export function initTypewriter() {
   const target = document.getElementById('typewriter')
   if (!target) return
 
-  const words = ['Graphiste designer', 'Développeur web full stack']
+  const words = ['Graphiste designer', 'Développeur web']
   let wordIndex = 0
   let charIndex = 0
   let deleting = false

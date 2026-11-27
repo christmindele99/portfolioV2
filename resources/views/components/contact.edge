@@ -337,7 +337,10 @@
                 @end
               </div>
             </div>
-            <p class="mt-3 text-sm wrap-break-word opacity-90">{{ review.contain }}</p>
+            <p data-review-text class="mt-3 line-clamp-4 text-sm wrap-break-word opacity-90">{{ review.contain }}</p>
+            <button type="button" data-review-toggle hidden class="mt-2 cursor-pointer text-sm font-semibold text-accent hover:underline">
+              Voir plus
+            </button>
           </article>
         @end
       @else

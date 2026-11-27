@@ -135,6 +135,24 @@ function initRating() {
   paint(Number(input.value))
 }
 
+function initReviewToggles() {
+  document.querySelectorAll('[data-review-text]').forEach((text) => {
+    const button = text.nextElementSibling
+    if (!button || !button.matches('[data-review-toggle]')) return
+
+    // Le bouton n'apparaît que si le texte est vraiment coupé
+    if (text.scrollHeight > text.clientHeight + 1) button.hidden = false
+
+    button.addEventListener('click', () => {
+      const clamped = text.classList.toggle('line-clamp-4')
+      button.textContent = clamped ? 'Voir plus' : 'Voir moins'
+    })
+  })
+}
+
+if (document.readyState === 'complete') initReviewToggles()
+else window.addEventListener('load', initReviewToggles)
+
 // Après l'envoi d'un formulaire, ramène à la section contact pour voir le résultat
 function initFeedback() {
   const section = document.querySelector('#contact[data-feedback]')
